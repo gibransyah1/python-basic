@@ -66,6 +66,20 @@ print(buah[0])
 data = {"nama" : "Budi", "umur" : 20}
 print(data["nama"])
 
+#error handling
+v = str("teks")
+try :
+    v + 12
+except TypeError :
+    print("tidak bisa gabungkan string dan angka")
+except ValueError :
+    print("input harus angka")
+except : 
+    print("error")
+finally :
+    print("finish")
+
+#OOP
 objek = Mobil("Honda")
 objek.klakson()
 print(objek.merk)
